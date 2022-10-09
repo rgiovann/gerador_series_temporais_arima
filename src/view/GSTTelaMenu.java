@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
@@ -24,6 +25,7 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
 import application.Program;
+import resources.ResourceLoader;
 import utilities.GSTLabels;
   
 /**
@@ -43,7 +45,7 @@ public class GSTTelaMenu extends JFrame implements ActionListener,ItemListener,G
     JMenuItem menuItem=null;
 
     
-    public GSTTelaMenu() {
+    public GSTTelaMenu() throws IOException {
 
 
         // Create the menu bar
@@ -54,10 +56,19 @@ public class GSTTelaMenu extends JFrame implements ActionListener,ItemListener,G
         this.setSize(Program.getTelaLargura()-00, Program.getTelaAltura()-00);
         this.setLocationRelativeTo(null);
         
-        
+        // *** NOTE ***
+        //Since Java SE 9, invoking getResourceXXX on a class in a named module will only locate the resource in that module, 
+        // it will not search the class path as it did in previous release. 
+        //
         // Create icon image (fundo do frame)
-        ImageIcon imagemFundoRNA = new ImageIcon(this.getClass().getResource("image/correlograma.jpg"));
+        // debug
+        //ImageIcon imagemFundoRNA = new ImageIcon(this.getClass().getResource("correlograma.jpg"));
         
+        
+        //ImageIcon imagemFundoRNA = new ImageIcon(this.getClass().getResource("/image/correlograma.jpg")); 
+        ImageIcon imagemFundoRNA = new ImageIcon(ResourceLoader.loadImage("correlograma.jpg"));
+        
+
         // Create icon image (�cone do frame)
         //Toolkit kit = Toolkit.getDefaultToolkit();
         //Image imagemFrame = kit.getImage("image/gstjava.gif");

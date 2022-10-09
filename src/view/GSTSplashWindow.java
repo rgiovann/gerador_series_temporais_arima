@@ -80,6 +80,7 @@ public class GSTSplashWindow extends JFrame {
     }
   }
 
+  // #debug
   public static void disposeSplash() {
     instance.setVisible(false);
     instance.dispose();

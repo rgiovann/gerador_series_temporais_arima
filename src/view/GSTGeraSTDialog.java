@@ -15,7 +15,7 @@ public class GSTGeraSTDialog extends JDialog {
 	public GSTGeraSTDialog(Window parent, boolean bModal) {
 		super(parent);	
 		this.setModal(bModal);
-		this.setTitle("Gera S�rie Temporal");	
+		this.setTitle("Gera Série Temporal");	
 		this.setPreferredSize(new Dimension(350,300)); 		
 		GSTTelaMenu.SetaPosicaoJanela(this,new Dimension(getPreferredSize()));
 		this.setResizable(false);

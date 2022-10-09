@@ -9,9 +9,11 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import resources.ResourceLoader;
 import view.GSTSplashWindow;
 import view.GSTTelaMenu;
-
+ 
+ 
 /**
  * Classe inicial do programa, instancia a janela principal
  * @param args
@@ -41,7 +43,8 @@ public class Program  {
 			SwingUtilities.invokeAndWait(new Runnable() {
 			    public void run() {
 			    	
-			    	GSTSplashWindow.splash(this.getClass().getResource("image/splashscreen.jpg")); 
+			    	 
+			    	GSTSplashWindow.splash(ResourceLoader.loadImage("splashscreen.jpg")); 			    	
 			    }
 			});
 		} catch (InvocationTargetException e1) {
@@ -58,7 +61,7 @@ public class Program  {
                   // chama construtor da classe;
     		      @SuppressWarnings("unused")
     		      Program GSTMainWindow = new Program(); // inicializa ScreenWIDTH e ScreenHEIGHT
-    	          GSTMainWindow=null; // n�o preciso mais da classe, ja inicializei as vari�veis static (que nao dependem da instancia do objeto)    	
+    	          GSTMainWindow=null; // não preciso mais da classe, ja inicializei as vari�veis static (que nao dependem da instancia do objeto)    	
                   //Cria Janela do menu principal        
     	          GSTTelaMenu frameTelaPrincipal = new GSTTelaMenu(); 
     	          //Close Splash window         

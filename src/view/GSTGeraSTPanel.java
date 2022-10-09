@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-import view.GSTGeraTabPanel;
+//import view.GSTGeraTabPanel;
 import utilities.GSTParamST;
 import utilities.GSTLabels;
 

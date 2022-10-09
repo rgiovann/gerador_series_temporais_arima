@@ -3,13 +3,14 @@ package view;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import java.io.IOException;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import resources.ResourceLoader;
 import utilities.GSTLabels;
 
 public class GSTHelpPanel extends JPanel  implements ActionListener,GSTLabels 
@@ -23,11 +24,17 @@ public class GSTHelpPanel extends JPanel  implements ActionListener,GSTLabels
 	 */
 	final JButton buttonSair   = new JButton(GSTLabels.botaoCancelar); 
 	
-	public GSTHelpPanel()
+	public GSTHelpPanel() throws IOException
 	{
 	super(new BorderLayout());
 	
-    ImageIcon imagemFundoRNA = new ImageIcon(this.getClass().getResource("image/help.jpg"));
+	// System.out.println(this.getClass().getResource("/"));
+	// file:/E:/JAVA/ECLIPSE/workspace/gerador_series_temporais_arima/bin/   ** aqui o problema **
+	
+	ImageIcon imagemFundoRNA = new ImageIcon(ResourceLoader.loadImage("help.jpg"));
+	
+    
+    
     //imagemFundoRNA.setImage(imagemFundoRNA.getImage().getScaledInstance(GSTJava.getTelaLargura()-50, GSTJava.getTelaAltura()-50, 100));
     JLabel labelRNA = new JLabel(imagemFundoRNA);
     this.add(labelRNA,BorderLayout.CENTER);     

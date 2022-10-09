@@ -19,7 +19,7 @@ public class GSTConsoleDialog extends JDialog implements GSTLabels {
 	public GSTConsoleDialog(Window parent, boolean bModal) {
 		super(parent);	
  		this.setModal(bModal);
-		this.setTitle("Sum�rio dos C�lculos da S�rie Temporal");	
+		this.setTitle("Sumário dos Cálculos da Série Temportal");	
 		this.setPreferredSize(new Dimension(660,400)); 		
 		GSTTelaMenu.SetaPosicaoJanela(this,new Dimension(getPreferredSize()));
 		this.setResizable(false);    

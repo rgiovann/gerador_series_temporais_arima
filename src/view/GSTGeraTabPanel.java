@@ -6,11 +6,11 @@ import java.awt.event.KeyEvent;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
-import gstjava.GSTGeraSTTabAR1;
-import gstjava.GSTGeraTabAR2;
-import gstjava.GSTGeraTabARMA1;
-import gstjava.GSTGeraTabMA1;
-import gstjava.GSTGeraTabMA2;
+//import view.GSTGeraSTTabAR1;
+//import view.GSTGeraTabAR2;
+//import view.GSTGeraTabARMA1;
+//import view.GSTGeraTabMA1;
+//import view.GSTGeraTabMA2;
 import utilities.GSTLabels;
 import utilities.GSTParamST;
 
