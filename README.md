@@ -1,4 +1,4 @@
-##### *ARMA times series generator*
+#### *ARMA times series generator*
 
 This application generates some types ARMA time series models according to described 
 in the book "_Time series analysis, forecasting and control_" from Box & Jenkins. 
@@ -17,5 +17,8 @@ The inputs required by the user are:
 -   GUI - MigLayout https://www.miglayout.com/
 -   Gráficos - JFreChart https://www.jfree.org/jfreechart/
 -   Exportação de tabelas para o Excel - Apache POI https://poi.apache.org/
+
+For your convenience there is an runnable jar file in the _runnable_jar_ directory.
+Tested using Windows 10 Home Single Language 21H2.
 
 __Built using Java S.E. 1.7__
