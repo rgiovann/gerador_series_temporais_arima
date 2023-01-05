@@ -7,23 +7,23 @@ import javax.swing.JDialog;
 
 public class GSTGeraSTDialog extends JDialog {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -6584881320030975901L;
+    /**
+     * 
+     */
+    private static final long serialVersionUID = -6584881320030975901L;
 
-	public GSTGeraSTDialog(Window parent, boolean bModal) {
-		super(parent);	
-		this.setModal(bModal);
-		this.setTitle("Gera Série Temporal");	
-		this.setPreferredSize(new Dimension(350,300)); 		
-		GSTTelaMenu.SetaPosicaoJanela(this,new Dimension(getPreferredSize()));
-		this.setResizable(false);
-		
-        //Add contents to the window.
-        this.add(new GSTGeraSTPanel());
-         
-		
+    public GSTGeraSTDialog(Window parent, boolean bModal)
+	{
+	    super(parent);
+	    this.setModal(bModal);
+	    this.setTitle("Generate time series");
+	    this.setPreferredSize(new Dimension(350, 300));
+	    GSTTelaMenu.SetaPosicaoJanela(this, new Dimension(this.getPreferredSize()));
+	    this.setResizable(false);
+
+	    // Add contents to the window.
+	    this.add(new GSTGeraSTPanel());
+
 	}
-	
+
 }

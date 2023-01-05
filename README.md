@@ -1,12 +1,18 @@
-### Gerador de séries temporais ARIMA AR(1),AR(2), MA(1), MA(2), ARMA(1).
+### *ARMA times series generator*
 
-O aplicativo, escrito em Java (SE 1.7) gera séries temporais estacionárias ARIMA, gerando gráficos unidimensionais  
-com até 250 observações, os valores também podem ser salvos em arquivos do tipo Excel.  
-Incluso um arquivo JAR executável no diretório \runnable_jar.
+This application generates some types ARMA time series models according to described 
+in the book "Time series analysis, forecasting and control" from Box & Jenkins. 
+	- The inputs required by the user are:
+	- φ1  for autoregressive time series AR(1);
+	- φ1  and φ2 for autoregressive time series AR(2);
+	- θ1 for moving average time series MA(1);
+	- θ1 and θ2  for moving average time series MA(2);  
+	- φ1 and θ1  for autoregressive/moving average time series ARMA(1,1);    
+	- Sample size, minimum value is 50 and maximum value is 250;
+	- Mean of the time series;
+	- at() noise variance, value must be greater than zero
 
----
-
-**Bibliotecas utilizadas:**
+**External libs required:**
 
 -   GUI - MigLayout https://www.miglayout.com/
 
@@ -14,4 +20,4 @@ Incluso um arquivo JAR executável no diretório \runnable_jar.
 
 -   Exportação de tabelas para o Excel - Apache POI https://poi.apache.org/
 
-![Image](/image/help.jpg)
+Writen using Java SE 1.7
