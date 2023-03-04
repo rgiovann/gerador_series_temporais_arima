@@ -26,6 +26,7 @@ __Built using Java S.E. 1.7__
 Some application screenshots:
 
  **MAIN WINDOW**
+ 
 ![main window](https://github.com/rgiovann/image-repo/blob/main/TS_FIG1.jpg)
 
 
@@ -34,4 +35,5 @@ Some application screenshots:
 ![calculation results](https://github.com/rgiovann/image-repo/blob/main/TS_FIG2.jpg)
 
 **GRAPH**
+
 ![graph](https://github.com/rgiovann/image-repo/blob/main/TS_FIG3.jpg)
