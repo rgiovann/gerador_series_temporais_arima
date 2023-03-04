@@ -26,5 +26,7 @@ __Built using Java S.E. 1.7__
 Some application screenshots:
 
 ![main window](/TS_FIG1.jpg)
+
 ![calculation results](/TS_FIG2.jpg)
+
 ![graphs](/TS_FIG3.jpg)
