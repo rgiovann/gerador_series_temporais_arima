@@ -15,8 +15,8 @@ The inputs required by the user are:
 **External libs required:**
 
 -   GUI - MigLayout https://www.miglayout.com/
--   Gráficos - JFreChart https://www.jfree.org/jfreechart/
--   Exportação de tabelas para o Excel - Apache POI https://poi.apache.org/
+-   Charts - JFreChart https://www.jfree.org/jfreechart/
+-   Export excel tables - Apache POI https://poi.apache.org/
 
 For your convenience there is an runnable jar file in the _runnable_jar_ directory.
 Tested using Windows 10 Home Single Language 21H2.
